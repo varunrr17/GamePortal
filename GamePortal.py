@@ -134,8 +134,8 @@ def snake_game():
         with open("gallery/snake_hiscore.txt", "r") as f:
             hiscore = f.read()
 
-        food_x = random.randint(20, screen_width / 2)
-        food_y = random.randint(20, screen_height / 2)
+        food_x = random.randint(20, screen_width // 2)
+        food_y = random.randint(20, screen_height // 2)
         score = 0
         init_velocity = 5
         snake_size = 30
