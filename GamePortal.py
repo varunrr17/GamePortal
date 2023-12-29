@@ -54,7 +54,7 @@ def draw_menu():
     elif button2.check_clicked():
         command = 2
     elif inst_menu.check_clicked():
-        command = 4
+        command = 3
     return command
 
 def snake_game():
@@ -101,6 +101,7 @@ def snake_game():
             text_screen("Welcome to Snakes", black, 260, 220)
             text_screen("Press Space Bar To Play", black, 232, 260)
             text_screen("Press Esc to return to Main Menu", black, 170, 300)
+            text_screen("Press R To Restart", black, 232, 340)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     exit_game = True
@@ -177,8 +178,8 @@ def snake_game():
                             velocity_y = init_velocity
                             velocity_x = 0
 
-                        if event.key == pygame.K_q:
-                            score +=10
+                        if event.key == pygame.K_r:
+                            gameloop()
 
                         if event.key == pygame.K_ESCAPE:
                             Main_Menu()
@@ -186,7 +187,7 @@ def snake_game():
                 snake_x = snake_x + velocity_x
                 snake_y = snake_y + velocity_y
 
-                if abs(snake_x - food_x)<30 and abs(snake_y - food_y)<30:
+                if abs(snake_x- food_x)<25 and abs(snake_y - food_y)<25:
                     score +=10
                     food_x = random.randint(50, screen_width-50)
                     food_y = random.randint(50, screen_height-50)
@@ -296,6 +297,8 @@ def space_dodge_game():
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         Main_Menu()
+                    if event.key == pygame.K_r:
+                        main()
 
             keys = pygame.key.get_pressed()
             if keys[pygame.K_LEFT] and player.x - player_velocity >= 0:
