@@ -355,7 +355,7 @@ def Main_Menu():
     w = 900
     h = 600
     screen = pygame.display.set_mode([w,h])
-    pygame.display.set_caption("Menu tutorial")
+    pygame.display.set_caption("GameSphere")
 
     font = pygame.font.Font("gallery/pixeloid-font/PixeloidSansBold-PKnYd.ttf",15)
     fps = 60
