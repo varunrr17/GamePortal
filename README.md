@@ -41,7 +41,7 @@ To set up the GameSphere portal on your local machine, follow these steps:
 
 ## Usage
 
-Once you have opened `index.html`, you can select and play either of the two games from the main menu. Enjoy and have fun!
+Once you have exceuted this file, you can select and play either of the two games from the main menu. Enjoy and have fun!
 
 ## Game Instructions
 
