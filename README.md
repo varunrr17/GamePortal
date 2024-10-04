@@ -37,7 +37,7 @@ To set up the GameSphere portal on your local machine, follow these steps:
     ```sh
     cd GameSphere
     ```
-3. Open `index.html` in your preferred web browser.
+3. Run the file in your terminal.
 
 ## Usage
 
